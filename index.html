@@ -1,0 +1,354 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Code</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-color: #25b79f;
+  height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+/* ////........Navbar.......//// */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+.menu-items {
+  display: flex;
+}
+.menu-items li {
+  list-style: none;
+  padding: 1rem;
+}
+.menu-items a {
+  text-decoration: none;
+  color: #f0f0e6;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+.menu-items a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+.navbar .logo {
+  order: 1;
+  color: #f0f0e6;
+  font-size: 2rem;
+}
+/* ////........Home Content........//// */
+.home-content .name {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #07374a;
+  width: 100%;
+  text-align: center;
+}
+.home-content .name h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+.home-content .name p {
+  color: #f0f0e6;
+  font-size: 1.5rem;
+}
+.angle-down-icon {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  border: 3px solid #07374a;
+  border-radius: 50%;
+}
+.angle-down-icon a {
+  text-decoration: none;
+  color: #07374a;
+  padding: 1rem;
+}
+</style>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <div>
+          <h1 class="navbar-brand">PRATEEK</h1>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#about">About</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+    <div class="home-content" id="home-page">
+      <div class="name">
+        <h1>Hi, I am Priyanshu Singh (RA2211030010036)</h1>
+        <p>A beginner in Web Development</p>
+      </div>
+      <div class="angle-down-icon">
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+  </header>
+  <section class="about-me" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="left-content">
+          <div>
+            <h1 class="about-heading">About Me</h1>
+          
+          </div>
+          <style>
+            .about-me {
+  background-color: #07374a;
+  padding: 6rem 0;
+}
+.about-me .about-heading {
+  color: #25b79f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.about-content img {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about-content p {
+  font-size: 1.2rem;
+  color: #f0f0e6;
+  padding: 0 2.3rem;
+  text-align: center;
+}
+.skills .skills-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #25b79f;
+  text-align: center;
+}
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-content .left-content {
+  flex-basis: 45%;
+  text-align: center;
+}
+.about-content .right-content {
+  flex-basis: 45%;
+}
+          </style>
+
+          <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png" alt="image" />
+          <p>
+            My name is Priyanshu Singh, and I am 19 years old. I studied at Stella Maris Convent School and I am currently pursuing my Btech in computer science and engineering  at SRM University, Kattankulathur
+          </p>
+          <div class="work-arrow">
+            
+          </div>
+          <style>
+          .skills-bar {
+  padding: 25px 30px;
+}
+.skills-bar .bar {
+  margin: 25px 0;
+}
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #f0f0e6;
+}
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+.progress-line .javascript {
+  width: 50%;
+}
+.progress-line .c {
+  width: 50%;
+}
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+.progress-line .javascript::after {
+  content: "50%";
+}
+.progress-line .c::after {
+  content: "50%";
+}
+.navbar.solid {
+  background-color: #07374a;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+.navbar-brand {
+  display: none;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+.work-arrow {
+  margin: 2rem 0;
+}
+.work-arrow a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+}
+.work-arrow-2 {
+  margin: 2rem 0;
+}
+.work-arrow-2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+  display: none;
+}
+          </style>
+        </div>
+        <div class="skills">
+          <div class="right-content">
+            <div>
+              <h1 class="skills-heading">My Skills</h1>
+            </div>
+            <div class="skills-bar">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line"><span class="html"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                  </div>
+                  <div class="progress-line"><span class="css"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>javascript</span>
+                    </div>
+                    <div class="progress-line"><span class="bootstrap"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>JAVA</span>
+                      </div>
+                      <div class="progress-line"><span class="javascript"></span></div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>C++</span>
+                        </div>
+                        <div class="progress-line"><span class="c"></span></div>
+                      
+                
+        <p class="links">Or find me on:</p>
+        
+        <a href="https://github.com/TheUnderdog553" target="blank"><i class="fab fa-github"></i> Github</a>
+        
+        <a href="https://twitter.com/Priyanshu_553" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
+        <a href="https://www.instagram.com/priyanshu_singh_553/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </div>
+  <!-- JAVASCRIPT -->
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
